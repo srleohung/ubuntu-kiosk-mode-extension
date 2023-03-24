@@ -1,41 +1,49 @@
 {
-  "name": "Ubuntu Kiosk Mode",
-  "description": "Disables gestures, onscreen keyboard, menu bar, and top bar for kiosks and touch screen apps.",
-  "version": "1.0",
-  "shell-version": ["3.38", "3.36"], 
-  "url": "https://github.com/srleohung/ubuntu-kiosk-mode-extension",
-  "uuid": "srleohung@gmail.com",
-  "keywords": ["kiosk", "touch screen", "gestures", "onscreen keyboard"],
-  "license": "GPL-3.0",
-  "authors": [
-      {
-          "name": "Leo Hung",
-          "email": "srleohung@gmail.com",
-          "homepage": "https://github.com/srleohung/ubuntu-kiosk-mode-extension"
-      }
-  ],
-  "settings-schema": {
-      "properties": {
-          "disable-gestures": {
-              "type": "boolean",
-              "default": true,
-              "description": "Disables gestures"
-          },
-          "disable-onscreen-keyboard": {
-              "type": "boolean",
-              "default": true,
-              "description": "Disables onscreen keyboard"
-          },
-          "disable-menu-bar": {
-              "type": "boolean",
-              "default": true,
-              "description": "Disables menu bar"
-          },
-          "disable-top-bar": {
-              "type": "boolean",
-              "default": true,
-              "description": "Disables top bar"
-          }
-      }
-  }
+    "name": "Ubuntu Kiosk Mode",
+    "description": "Disables gestures, onscreen keyboard, menu bar, and top bar for kiosks and touch screen apps.",
+    "version": "1.0",
+    "shell-version": [
+        "3.38",
+        "3.36"
+    ],
+    "url": "https://github.com/srleohung/ubuntu-kiosk-mode-extension",
+    "uuid": "srleohung@gmail.com",
+    "keywords": [
+        "kiosk",
+        "touch screen",
+        "gestures",
+        "onscreen keyboard"
+    ],
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Leo Hung",
+            "email": "srleohung@gmail.com",
+            "homepage": "https://github.com/srleohung/ubuntu-kiosk-mode-extension"
+        }
+    ],
+    "settings-schema": {
+        "properties": {
+            "disable-gestures": {
+                "type": "boolean",
+                "default": true,
+                "description": "Disables gestures"
+            },
+            "disable-onscreen-keyboard": {
+                "type": "boolean",
+                "default": true,
+                "description": "Disables onscreen keyboard"
+            },
+            "disable-menu-bar": {
+                "type": "boolean",
+                "default": true,
+                "description": "Disables menu bar"
+            },
+            "disable-top-bar": {
+                "type": "boolean",
+                "default": true,
+                "description": "Disables top bar"
+            }
+        }
+    }
 }
