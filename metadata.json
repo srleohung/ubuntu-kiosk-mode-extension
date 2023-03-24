@@ -1,10 +1,10 @@
 {
-  "name": "Kiosk Mode",
+  "name": "Ubuntu Kiosk Mode",
   "description": "Disables gestures, onscreen keyboard, menu bar, and top bar for kiosks and touch screen apps.",
   "version": "1.0",
   "shell-version": ["3.38", "3.36"], 
   "url": "https://github.com/srleohung/ubuntu-kiosk-mode-extension",
-  "uuid": "c8f0a330-22f7-11ec-9621-0242ac130002",
+  "uuid": "srleohung@gmail.com",
   "keywords": ["kiosk", "touch screen", "gestures", "onscreen keyboard"],
   "license": "GPL-3.0",
   "authors": [
