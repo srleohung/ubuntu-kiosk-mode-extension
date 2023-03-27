@@ -2,8 +2,6 @@ const KeyboardUI = imports.ui.keyboard;
 
 var disableGestures = true;
 var disableOnscreenKeyboard = true;
-var disableMenuBar = true;
-var disableTopBar = true;
 
 // **************************************************
 // * https://github.com/lxylxy123456/cariboublocker

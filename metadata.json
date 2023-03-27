@@ -33,16 +33,6 @@
                 "type": "boolean",
                 "default": true,
                 "description": "Disables onscreen keyboard"
-            },
-            "disable-menu-bar": {
-                "type": "boolean",
-                "default": true,
-                "description": "Disables menu bar"
-            },
-            "disable-top-bar": {
-                "type": "boolean",
-                "default": true,
-                "description": "Disables top bar"
             }
         }
     }

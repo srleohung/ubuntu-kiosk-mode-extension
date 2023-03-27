@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Button 1",
+        "command": "echo 'Button 1 clicked'"
+    },
+    {
+        "label": "Button 2",
+        "command": "echo 'Button 2 clicked'"
+    },
+    {
+        "label": "Button 3",
+        "command": "echo 'Button 3 clicked'"
+    },
+    {
+        "label": "Button 4",
+        "command": "echo 'Button 4 clicked'"
+    },
+    {
+        "label": "Button 5",
+        "command": "echo 'Button 5 clicked'"
+    }
+]
