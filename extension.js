@@ -1,7 +1,9 @@
 const KeyboardUI = imports.ui.keyboard;
+const Main = imports.ui.main;
 
 var disableGestures = true;
 var disableOnscreenKeyboard = true;
+var disableTopBar = true;
 
 // **************************************************
 // * https://github.com/lxylxy123456/cariboublocker
@@ -34,6 +36,12 @@ function enable() {
         KeyboardUI.KeyboardManager.prototype._lastDeviceIsTouchscreen = _modifiedLastDeviceIsTouchscreen;
         print('disabled onscreen keyboard');
     }
+
+    // Disable top bar
+    if (disableTopBar) {
+        Main.panel.add_style_class_name('hide-top-bar');
+        Main.panel._hideIndicators()
+    }
 }
 
 function disable() {
@@ -50,5 +58,10 @@ function disable() {
         KeyboardUI.KeyboardManager.prototype._lastDeviceIsTouchscreen = _originalLastDeviceIsTouchscreen;
         _originalLastDeviceIsTouchscreen = null;
         print('enabled onscreen keyboard');
+    }
+
+    // Enable top bar
+    if (disableTopBar) {
+        Main.panel.remove_style_class_name('hide-top-bar');
     }
 }

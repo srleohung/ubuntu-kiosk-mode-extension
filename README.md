@@ -65,3 +65,4 @@ glib-compile-schemas schemas/
 # References
 - [How-to-Create-A-GNOME-Extension](https://www.codeproject.com/Articles/5271677/How-to-Create-A-GNOME-Extension)
 - [cariboublocker](https://github.com/lxylxy123456/cariboublocker)
+- [gnome-shell-extension-clear-top-bar](https://github.com/superterran/gnome-shell-extension-clear-top-bar)
