@@ -3,6 +3,8 @@
 # Kiosk Mode Feature List
 - Disable gestures
 - Disable onscreen keyboard
+- Disable Top Bar
+- Event Capture
 
 # Debug Extension
 To Debug the Extension (extension.js), use this in terminal:
@@ -66,3 +68,4 @@ glib-compile-schemas schemas/
 - [How-to-Create-A-GNOME-Extension](https://www.codeproject.com/Articles/5271677/How-to-Create-A-GNOME-Extension)
 - [cariboublocker](https://github.com/lxylxy123456/cariboublocker)
 - [gnome-shell-extension-clear-top-bar](https://github.com/superterran/gnome-shell-extension-clear-top-bar)
+- [Gdk.Event](https://valadoc.org/gdk-3.0/Gdk.Event.html)

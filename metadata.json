@@ -38,6 +38,11 @@
                 "type": "boolean",
                 "default": true,
                 "description": "Disables top bar"
+            },
+            "enable-event-capture": {
+                "type": "boolean",
+                "default": true,
+                "description": "Enable event capture"
             }
         }
     }
