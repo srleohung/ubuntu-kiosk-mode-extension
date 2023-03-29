@@ -51,19 +51,42 @@ const UKMPrefsWidget = GObject.registerClass(
             let customConfig = readConfigFile();
             if (customConfig) {
                 for (let config of customConfig) {
-                    let button = new Gtk.Button({ label: config.label });
-                    button.connect('clicked', () => {
-                        let [success, stdout, stderr] = GLib.spawn_command_line_sync(config.command);
-                        if (success) {
-                            outputView.get_buffer().set_text(stdout.toString(), stdout.length);
-                        } else {
-                            outputView.get_buffer().set_text(stderr.toString(), stderr.length);
+                    if (config.items) {
+                        let dropdowns = new Gtk.ComboBoxText();
+                        dropdowns.append_text(config.label);
+                        let commands = { [config.label]: '' }
+                        for (let item of config.items) {
+                            dropdowns.append_text(item.label);
+                            commands[item.label] = item.command
                         }
-                    });
-                    this.add(button);
+                        dropdowns.connect("changed", () => {
+                            let label = dropdowns.get_active_text();
+                            let command = commands[label]
+                            if (command) {
+                                let [success, stdout, stderr] = GLib.spawn_command_line_sync(command);
+                                if (success) {
+                                    outputView.get_buffer().set_text(stdout.toString(), stdout.length);
+                                } else {
+                                    outputView.get_buffer().set_text(stderr.toString(), stderr.length);
+                                }
+                            }
+                        });
+                        dropdowns.set_active(0)
+                        this.add(dropdowns);
+                    } else {
+                        let button = new Gtk.Button({ label: config.label });
+                        button.connect('clicked', () => {
+                            let [success, stdout, stderr] = GLib.spawn_command_line_sync(config.command);
+                            if (success) {
+                                outputView.get_buffer().set_text(stdout.toString(), stdout.length);
+                            } else {
+                                outputView.get_buffer().set_text(stderr.toString(), stderr.length);
+                            }
+                        });
+                        this.add(button);
+                    }
                 }
             }
             this.add(scrolledWindow);
         }
-
     });
