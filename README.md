@@ -14,7 +14,7 @@ To install this extension, follow these steps:
 1. Download [ubuntu-kiosk-mode-extension.zip](https://github.com/srleohung/ubuntu-kiosk-mode-extension/releases/download/v0.1/ubuntu-kiosk-mode-extension.zip).
 2. Open a terminal.
 3. Run the following command: `gnome-extensions install --force ubuntu-kiosk-mode-extension.zip` to install.
-4. Run the following command: `gnome-extensions enable --force ubuntu-kiosk-mode-extension.zip` to enable.
+4. Run the following command: `gnome-extensions enable ubuntu-kiosk-mode-extension.zip` to enable.
 
 # Usage
 Once the extension is installed, it will automatically enable kiosk mode with the specified features. To access the custom configuration menu, follow these steps:
