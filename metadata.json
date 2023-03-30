@@ -1,7 +1,7 @@
 {
     "name": "Ubuntu Kiosk Mode",
     "description": "Disables gestures, onscreen keyboard, menu bar, and top bar for kiosks and touch screen apps.",
-    "version": "1.0",
+    "version": "0.1",
     "shell-version": [
         "3.38",
         "3.36"
